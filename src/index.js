@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
     return;
   });
   console.log(req.query);
+  res.status(200);
   res.send('recieved..');
 });
 
