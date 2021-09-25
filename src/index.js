@@ -4,14 +4,6 @@ const app = express();
 const fs = require('fs');
 const PORT = 5555;
 const { exec } = require('child_process');
-const cors = require('cors');
-
-const corsOptions = {
-  origin: '*',
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
-};
-app.use(cors(corsOptions)); // Use this after the variable declaration
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
